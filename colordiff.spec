@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x45E1E473378BB197 (davee@sungate.co.uk)
 #
 Name     : colordiff
-Version  : 1.0.18
-Release  : 1
-URL      : https://www.colordiff.org/colordiff-1.0.18.tar.gz
-Source0  : https://www.colordiff.org/colordiff-1.0.18.tar.gz
-Source1  : https://www.colordiff.org/colordiff-1.0.18.tar.gz.sig
+Version  : 1.0.19
+Release  : 2
+URL      : https://www.colordiff.org/colordiff-1.0.19.tar.gz
+Source0  : https://www.colordiff.org/colordiff-1.0.19.tar.gz
+Source1  : https://www.colordiff.org/colordiff-1.0.19.tar.gz.sig
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : GPL-2.0
@@ -35,31 +35,31 @@ license components for the colordiff package.
 
 
 %prep
-%setup -q -n colordiff-1.0.18
-cd %{_builddir}/colordiff-1.0.18
+%setup -q -n colordiff-1.0.19
+cd %{_builddir}/colordiff-1.0.19
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1580843451
+export SOURCE_DATE_EPOCH=1587399901
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
 export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FCFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FCFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
 export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=4 "
 make  %{?_smp_mflags}
 
 
 %install
-export SOURCE_DATE_EPOCH=1580843451
+export SOURCE_DATE_EPOCH=1587399901
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/colordiff
-cp %{_builddir}/colordiff-1.0.18/COPYING %{buildroot}/usr/share/package-licenses/colordiff/4cc77b90af91e615a64ae04893fdffa7939db84c
+cp %{_builddir}/colordiff-1.0.19/COPYING %{buildroot}/usr/share/package-licenses/colordiff/4cc77b90af91e615a64ae04893fdffa7939db84c
 %make_install
 
 %files
