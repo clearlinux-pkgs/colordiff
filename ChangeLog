@@ -148,4 +148,10 @@ header of each changed file).  Thanks Geraint Edwards.  Improved portability of
 Makefile, thanks Michael Osipov.  Provide support for 24-bit colour strings,
 thanks Stephen Wall.
 
+Changes between 1.0.19 and 1.0.20
+
+Some improvements to reading command-line options and Makefile
+portability.  Support for Windows configurations, thanks Rafael Kitover; and for
+Octopus git/merge thanks Kiyoshi Ohgishi.
+
 # vim: tw=72
