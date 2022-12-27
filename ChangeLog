@@ -154,4 +154,9 @@ Some improvements to reading command-line options and Makefile
 portability.  Support for Windows configurations, thanks Rafael Kitover; and for
 Octopus git/merge thanks Kiyoshi Ohgishi.
 
+Changes between 1.0.20 and 1.0.21
+
+Support for Windows C:\ProgramData instead of /etc, improved documentation for
+command-line options.
+
 # vim: tw=72

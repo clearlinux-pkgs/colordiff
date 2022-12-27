@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x45E1E473378BB197 (davee@sungate.co.uk)
 #
 Name     : colordiff
-Version  : 1.0.20
-Release  : 3
-URL      : https://www.colordiff.org/colordiff-1.0.20.tar.gz
-Source0  : https://www.colordiff.org/colordiff-1.0.20.tar.gz
-Source1  : https://www.colordiff.org/colordiff-1.0.20.tar.gz.sig
+Version  : 1.0.21
+Release  : 4
+URL      : https://www.colordiff.org/colordiff-1.0.21.tar.gz
+Source0  : https://www.colordiff.org/colordiff-1.0.21.tar.gz
+Source1  : https://www.colordiff.org/colordiff-1.0.21.tar.gz.sig
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : GPL-2.0
@@ -35,15 +35,15 @@ license components for the colordiff package.
 
 
 %prep
-%setup -q -n colordiff-1.0.20
-cd %{_builddir}/colordiff-1.0.20
+%setup -q -n colordiff-1.0.21
+cd %{_builddir}/colordiff-1.0.21
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1645634083
+export SOURCE_DATE_EPOCH=1672167358
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -56,10 +56,10 @@ make  %{?_smp_mflags}
 
 
 %install
-export SOURCE_DATE_EPOCH=1645634083
+export SOURCE_DATE_EPOCH=1672167358
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/colordiff
-cp %{_builddir}/colordiff-1.0.20/COPYING %{buildroot}/usr/share/package-licenses/colordiff/4cc77b90af91e615a64ae04893fdffa7939db84c
+cp %{_builddir}/colordiff-%{version}/COPYING %{buildroot}/usr/share/package-licenses/colordiff/4cc77b90af91e615a64ae04893fdffa7939db84c
 %make_install
 
 %files
