@@ -9,7 +9,7 @@
 #
 Name     : colordiff
 Version  : 1.0.21
-Release  : 5
+Release  : 6
 URL      : https://www.colordiff.org/colordiff-1.0.21.tar.gz
 Source0  : https://www.colordiff.org/colordiff-1.0.21.tar.gz
 Source1  : https://www.colordiff.org/colordiff-1.0.21.tar.gz.sig
@@ -59,7 +59,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1713228078
+export SOURCE_DATE_EPOCH=1713275915
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -102,7 +102,7 @@ FFLAGS="$CLEAR_INTERMEDIATE_FFLAGS"
 FCFLAGS="$CLEAR_INTERMEDIATE_FCFLAGS"
 ASFLAGS="$CLEAR_INTERMEDIATE_ASFLAGS"
 LDFLAGS="$CLEAR_INTERMEDIATE_LDFLAGS"
-export SOURCE_DATE_EPOCH=1713228078
+export SOURCE_DATE_EPOCH=1713275915
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/colordiff
 cp %{_builddir}/colordiff-%{version}/COPYING %{buildroot}/usr/share/package-licenses/colordiff/4cc77b90af91e615a64ae04893fdffa7939db84c || :
