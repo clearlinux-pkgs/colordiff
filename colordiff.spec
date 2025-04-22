@@ -9,7 +9,7 @@
 #
 Name     : colordiff
 Version  : 1.0.21
-Release  : 6
+Release  : 7
 URL      : https://www.colordiff.org/colordiff-1.0.21.tar.gz
 Source0  : https://www.colordiff.org/colordiff-1.0.21.tar.gz
 Source1  : https://www.colordiff.org/colordiff-1.0.21.tar.gz.sig
